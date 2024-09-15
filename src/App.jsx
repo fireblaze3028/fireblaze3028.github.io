@@ -45,7 +45,7 @@ function App() {
           <div className='cards-wrapper' id="cards-wrapper">
             <div className='card' id="about-card">
               <h1 className='text'>hello there!</h1>
-              <p className='text'>My name is Marc-Antony Fernandes. I am a 3rd year Software Engineering student at Carleton University in Ottawa.
+              <p className='text'>My name is Marc Fernandes. I am a 3rd year Software Engineering student at Carleton University in Ottawa.
               I am able to code in various languages such as C, Java, JavaScript, Python, HTML and CSS.
               </p>
               <p className='text'>I enjoy playing word games and video games, biking, and exercising!</p>
