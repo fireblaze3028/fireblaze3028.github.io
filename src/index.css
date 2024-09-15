@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+    scrollbar-color: rgba(36, 36, 36, 0.847) rgba(11, 11, 11, 0.847);
+}
+
+.pagetop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(11, 11, 11, 0.847);
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 20vw;
+    height: 10vh;
+    width: 50vw;
+    transform: translateY(0px);
+}
+
+.pagetop--item {
+    width: 15vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.679);
+    font-family: DM Sans;
+    font-size: 2vw;
+    margin: 10px;
+}
+
+.pagetop--item:hover {
+    cursor:pointer;
+}
+
+.card {
+    background-color: rgba(11, 11, 11, 0.847);
+    border: 2px solid rgb(39, 39, 39);
+    width: 50vw;
+    height: 70vh;
+    border-radius: 3vw;
+    margin-block: 2vh;
+    margin-inline: 20vw;
+    padding-block: 15px;
+    padding-inline: 2vw;
+    transition: all 1s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card--center {
+    align-items: center;
+    justify-content: center;
+    padding-block: 2px;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(calc((2*20vw) + (2*2vw) + 50vw));
+    transition: all 1s ease;
+}
+
+.text {
+    font-family: DM Sans;
+    color: white;
+}
+
+h1.text {
+    font-size: 40px;
+}
+
+p.text {
+    font-size: 25px;
+}
+
+.modified {
+    color:gray;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+}
+
+@keyframes unblur {
+    0% {
+        backdrop-filter: blur(100vw);
+    }
+    100% {
+        backdrop-filter: blur(0);
+    }
+}
+
+.load-blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: 2s cubic-bezier(0, 1, 0, 1) 0s 1 unblur;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.about-image {
+    width: min(25vw, 30vh);
+}
+
+a:link {
+    color: hsl(247, 100%, 80%);
+}
+
+a:visited {
+    color: hsl(303, 100%, 80%)
+}
+
+.repo {
+    margin: 20px;
+    border-radius: 1vw;
+    padding-block: 0px;
+    padding-inline: 10px;
+    align-content: center;
+    background-color: rgb(39, 39, 39);
+    text-align: left;
+}
+
+.repos {
+    height:100%;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+
+.bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: translateY(0);
+}
+
+.bottomline {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(100, 100, 100);
+}
